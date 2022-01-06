@@ -20,7 +20,7 @@ var heap: [100]u8 = undefined;
 var fba = std.heap.FixedBufferAllocator.init(&heap);
 const alloc = fba.allocator();
 
-var frame: u8 = 0;
+var frame: u7 = 0;
 
 export fn update() void {
     

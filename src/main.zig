@@ -23,7 +23,6 @@ const alloc = fba.allocator();
 var frame: u7 = 0;
 
 export fn update() void {
-    
     w4.DRAW_COLORS.* = 0x402;
     
     const frame_display = std.fmt.allocPrint(alloc, "{d:3}", .{frame}) catch unreachable;
